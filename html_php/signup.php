@@ -1,11 +1,15 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
-if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email']) && !empty($_POST['password'])){
+if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email'])  && !empty($_POST['password']) && !empty($_POST['date']) && !empty($_POST['month']) && !empty($_POST['year']) && !empty($_POST['gender'])){
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $date = $_POST['date'];
+    $month = $_POST['month'];
+    $year = $_POST['year'];
+    $gender = $_POST['gender'];
     header("Location: output_signup.php");
 }else{
     $eror = true;
