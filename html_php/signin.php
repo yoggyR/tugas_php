@@ -1,13 +1,30 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
+// Start the session
+session_start();
+$userDummy = [
+    'username' => 'admin',
+    'password' => '12345',
+    'email' => 'ddd@gmail.com',
+    'alamat' => 'Prabumulih'
+];
 
-if(!empty($_POST['name']) && !empty($_POST['password']) ){
-    $nama = $_POST['nama'];
-    $password = $_POST['password'];
-    header("Location: output_signin.php");
-}else{
-    $eror = true;
-}
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    if(!empty($_POST['name']) && !empty($_POST['password']) ){
+        $nama = $_POST['name'];
+        $password = $_POST['password'];
+        // Note : contoh authentication real
+        if($nama == $userDummy['username'] && $password == $userDummy['password']){
+            // Set Session, supaya data bisa dipakai di page lain
+            $_SESSION["name"] = $nama;
+            $_SESSION["email"] = $userDummy['email'];
+            $_SESSION["alamat"] = $userDummy['alamat'];
+            header("Location: output_signin.php");
+        }else{
+            $erorAuth = true;
+        }
+    }else{
+        $eror = true;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -35,9 +52,11 @@ if(!empty($_POST['name']) && !empty($_POST['password']) ){
 
 <body class="text-center ody">
     <main class="form-signin shadow">
-    <?php
-    if(isset($eror)):?>
-    <p style="color: red;">TOLONG USERNAME DAN PASSWORD DIISI !!!</p>
+    <?php if(isset($eror)):?>
+        <p style="color: red;">TOLONG USERNAME DAN PASSWORD DIISI !!!</p>
+    <?php endif;?>
+    <?php if(isset($erorAuth)):?>
+        <p style="color: red;">USERNAME DAN PASSWORD TIDAK COCOK !!!</p>
     <?php endif;?>
         <form class="orm" action=" " method="POST">
             <img class="mb-4 gm" src="../icon/svg.svg" alt="">
@@ -56,8 +75,7 @@ if(!empty($_POST['name']) && !empty($_POST['password']) ){
                 </label>
             </div>
             <button class="w-100 btn btn-lg sas " type="submit" name="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted sas1">Doesn't have an account yet ? <a href=""> Sing
-                    Up</a>
+            <p class="mt-5 mb-3 text-muted sas1">Doesn't have an account yet ? <a href="signup.php"> SignUp</a>
             </p>
         </form>
     </main>

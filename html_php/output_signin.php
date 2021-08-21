@@ -1,4 +1,10 @@
-
+<?php
+    // Start the session
+    session_start();
+    if(!isset($_SESSION["name"])){
+        header("Location: signin.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +14,10 @@
     <title>siginin</title>
 </head>
 <body>
-    <h1>ANDA BERHASIL SIGN IN !!!</h1>
+    <h1>ANDA BERHASIL SIGN IN <?= $_SESSION["name"]; ?> !!!</h1>
+    <h1>EMAIL ANDA <?= $_SESSION["email"]; ?> !!!</h1>
+    <h1>ALAMAT ANDA <?= $_SESSION["alamat"]; ?> !!!</h1>
+
+    <a href="logout.php">LOGOUT</a>
 </body>
 </html>

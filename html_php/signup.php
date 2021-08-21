@@ -1,19 +1,25 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-
-if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email'])  && !empty($_POST['password']) && !empty($_POST['date']) && !empty($_POST['month']) && !empty($_POST['year']) && !empty($_POST['gender'])){
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $date = $_POST['date'];
-    $month = $_POST['month'];
-    $year = $_POST['year'];
-    $gender = $_POST['gender'];
-    header("Location: output_signup.php");
-}else{
-    $eror = true;
-}
+    if(!empty($_POST['firstName']) 
+        && !empty($_POST['lastName']) 
+        && !empty($_POST['email'])  
+        && !empty($_POST['password']) 
+        && !empty($_POST['date']) 
+        && !empty($_POST['month']) 
+        && !empty($_POST['year']) 
+        && !empty($_POST['gender'])){
+            $firstName = $_POST['firstName'];
+            $lastName = $_POST['lastName'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $date = $_POST['date'];
+            $month = $_POST['month'];
+            $year = $_POST['year'];
+            $gender = $_POST['gender'];
+            header("Location: output_signup.php");
+    }else{
+        $eror = true;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -41,9 +47,8 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
 
 <body class="boy">
     <div class="container">
-    <?php
-    if(isset($eror)):?>
-    <p style="color: red; text-align: center; background-color: white;">TOLONG DIISI SEMUA !!!</p>
+    <?php if(isset($eror)):?>
+        <p style="color: red; text-align: center; background-color: white;">TOLONG DIISI SEMUA !!!</p>
     <?php endif;?>
         <div class="row ger">
             <div class="col-4 dar">
@@ -54,7 +59,7 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
             <div class="col-8 cz">
                 <div class="row">
                     <div class="col-md-7 col-lg-8">
-                        <form action=" " method="POST">
+                        <form action="" method="POST">
                             <div class="row g-3">
                                 <p class="zy"><img src="../icon/svg.svg" alt=""> Easy Camper</p>
                                 <div class="col-sm-6">
@@ -84,7 +89,8 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                     <select class="form-select" id="date" name="date">
                                         <?php
                                         for($i=1; $i<=31; $i++){
-                                            echo "<option>$i</option>";
+                                            // Note : option harus ada value nya
+                                            echo "<option value='$i'>$i</option>";
                                         }
                                         ?>
                                     </select>
@@ -108,7 +114,8 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                             '12' => 'December',
                                         ];
                                         foreach($month as $key => $val){
-                                            echo "<option>$key</option>"; 
+                                            // Note : option harus ada value nya
+                                            echo "<option value='$key'>$val</option>"; 
                                         }
                                         ?>
                                     </select>
@@ -120,7 +127,13 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                             $th_awal= date('Y')-5;
                                             $th_akhir= date('Y')+4;
                                             for ($i=$th_akhir; $i>=$th_awal; $i--){
-                                                echo "<option>$i</option>"; 
+                                                // Note : option harus ada value nya
+                                                // Contoh logic tahun sekarang is selected
+                                                if(date('Y') == $i){
+                                                    $isSelected = 'selected="selected"';
+                                                }
+                                                echo "<option value='$i' $isSelected>$i</option>"; 
+                                                $isSelected = '';
                                             }
                                         ?>
                                     </select>
@@ -129,16 +142,15 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                     <label for="state" class="form-label">Gender</label>
                                     <select class="form-select" id="gender" name="gender">
                                         <option value="">Choose...</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
+                                        <option value='male'>Male</option>
+                                        <option value='female'>Female</option>
                                     </select>
                                 </div>
                             </div>
                             <br>
                             <button class="w-100 btn btn-dark btn-lg" type="submit" name="submit">Create your account</button>
-                            <p class="mt-3 das text-muted sas1">Already Registred ? <a href="../html/signin.html">
-                                    Sing
-                                    In</a>
+                            <p class="mt-3 das text-muted sas1">Already Registred ? <a href="signin.php">
+                                    Sign In</a>
                             </p>
                         </form>
                     </div>
