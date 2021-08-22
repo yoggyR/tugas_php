@@ -1,19 +1,36 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-
-if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email'])  && !empty($_POST['password']) && !empty($_POST['date']) && !empty($_POST['month']) && !empty($_POST['year']) && !empty($_POST['gender'])){
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $date = $_POST['date'];
-    $month = $_POST['month'];
-    $year = $_POST['year'];
-    $gender = $_POST['gender'];
-    header("Location: output_signup.php");
-}else{
-    $eror = true;
-}
+session_start();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (
+        !empty($_POST['firstName'])
+        && !empty($_POST['lastName'])
+        && !empty($_POST['email'])
+        && !empty($_POST['password'])
+        && !empty($_POST['date'])
+        && !empty($_POST['month'])
+        && !empty($_POST['year'])
+        && !empty($_POST['gender'])
+    ) {
+        $firstName = $_POST['firstName'];
+        $_SESSION["firstName"] = $firstName;
+        $lastName = $_POST['lastName'];
+        $_SESSION["lastName"] = $lastName;
+        $email = $_POST['email'];
+        $_SESSION["email"] = $email;
+        $password = $_POST['password'];
+        $_SESSION["password"] = $password;
+        $date = $_POST['date'];
+        $_SESSION["date"] = $date;
+        $month = $_POST['month'];
+        $_SESSION["month"] = $month;
+        $year = $_POST['year'];
+        $_SESSION["year"] = $year;
+        $gender = $_POST['gender'];
+        $_SESSION["gender"] = $gender;
+        header("Location: output_signup.php");
+    } else {
+        $eror = true;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -33,18 +50,16 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
     <!-- bagian google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- /bagian google fonts -->
 </head>
 
 <body class="boy">
     <div class="container">
-    <?php
-    if(isset($eror)):?>
-    <p style="color: red; text-align: center; background-color: white;">TOLONG DIISI SEMUA !!!</p>
-    <?php endif;?>
+        <?php
+        if (isset($eror)) : ?>
+            <p style="color: red; text-align: center; background-color: white;">TOLONG DIISI SEMUA !!!</p>
+        <?php endif; ?>
         <div class="row ger">
             <div class="col-4 dar">
                 <img src="../img/undraw_Login_re_4vu2.svg" alt="" class="gan">
@@ -59,19 +74,16 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                 <p class="zy"><img src="../icon/svg.svg" alt=""> Easy Camper</p>
                                 <div class="col-sm-6">
                                     <label for="firstName" class="form-label pir">First name</label>
-                                    <input type="text" class="form-control" id="firstName" placeholder="" 
-                                    name="firstName">
+                                    <input type="text" class="form-control" id="firstName" placeholder="" name="firstName">
                                 </div>
 
                                 <div class="col-sm-6">
                                     <label for="lastName" class="form-label">Last name</label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="" 
-                                    name="lastName">
+                                    <input type="text" class="form-control" id="lastName" placeholder="" name="lastName">
                                 </div>
                                 <div class="col-12">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email"
-                                        placeholder="easyeamper@easy.com" name="email">
+                                    <input type="email" class="form-control" id="email" placeholder="easyeamper@easy.com" name="email">
                                 </div>
 
                                 <div class="col-12">
@@ -83,8 +95,8 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                 <div class="col-md-4 ccv">
                                     <select class="form-select" id="date" name="date">
                                         <?php
-                                        for($i=1; $i<=31; $i++){
-                                            echo "<option>$i</option>";
+                                        for ($i = 1; $i <= 31; $i++) {
+                                            echo "<option value='$i'>$i</option>";
                                         }
                                         ?>
                                     </select>
@@ -107,8 +119,8 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                             '11' => 'November',
                                             '12' => 'December',
                                         ];
-                                        foreach($month as $key => $val){
-                                            echo "<option>$key</option>"; 
+                                        foreach ($month as $key => $val) {
+                                            echo "<option value='$key'>$val</option>";
                                         }
                                         ?>
                                     </select>
@@ -117,11 +129,15 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                 <div class="col-md-4 ccv">
                                     <select class="form-select" id="year" name="year">
                                         <?php
-                                            $th_awal= date('Y')-5;
-                                            $th_akhir= date('Y')+4;
-                                            for ($i=$th_akhir; $i>=$th_awal; $i--){
-                                                echo "<option>$i</option>"; 
+                                        $th_awal = date('Y') - 5;
+                                        $th_akhir = date('Y') + 4;
+                                        for ($i = $th_akhir; $i >= $th_awal; $i--) {
+                                            if (date('Y') == $i) {
+                                                $isSelected = 'selected="selected"';
                                             }
+                                            echo "<option value='$i' $isSelected>$i</option>";
+                                            $isSelected = '';
+                                        }
                                         ?>
                                     </select>
                                 </div>
@@ -129,14 +145,14 @@ if(!empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['e
                                     <label for="state" class="form-label">Gender</label>
                                     <select class="form-select" id="gender" name="gender">
                                         <option value="">Choose...</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
+                                        <option value='male'>Male</option>
+                                        <option value='female'>Female</option>
                                     </select>
                                 </div>
                             </div>
                             <br>
                             <button class="w-100 btn btn-dark btn-lg" type="submit" name="submit">Create your account</button>
-                            <p class="mt-3 das text-muted sas1">Already Registred ? <a href="../html/signin.html">
+                            <p class="mt-3 das text-muted sas1">Already Registred ? <a href="../html_php/signin.php">
                                     Sing
                                     In</a>
                             </p>
