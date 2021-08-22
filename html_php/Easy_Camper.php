@@ -15,9 +15,7 @@
     <!-- bagian google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- /bagian google fonts -->
 </head>
 
@@ -26,11 +24,8 @@
         <!-- bagian 1 -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../icon/cube 1.svg" alt="" width="32" height="32"
-                        class="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img src="../icon/cube 1.svg" alt="" width="32" height="32" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -39,7 +34,7 @@
                         <a class="nav-item nav-link me-4 xc" href="#">Service</a>
                         <a class="nav-item nav-link me-4 xc" href="#">Gallery</a>
                         <a class="nav-item nav-link me-4 xc" href="#">Information</a>
-                        <a class="nav-item btn me-4 btn masuk btn-dark" href="../html/signin.php">Sign In</a>
+                        <a class="nav-item btn me-4 btn masuk btn-dark" href="../html_php/signin.php">Sign In</a>
                     </div>
                 </div>
             </div>
@@ -64,8 +59,7 @@
                         eget
                         scelerisque
                         amet etiam in sit commodo. Pretium ut duis orci pulvinar pretium id consectetur.</p>
-                    <a href="#" type="button" class="btn btn-dark btn-lg btn-warna"><img src="../icon/CL_Site-Globe.svg"
-                            class="btn-icon" alt=""> Explore</a>
+                    <a href="#" type="button" class="btn btn-dark btn-lg btn-warna"><img src="../icon/CL_Site-Globe.svg" class="btn-icon" alt=""> Explore</a>
                 </div>
             </div>
         </div>
@@ -75,8 +69,7 @@
         <div class="container ner px-4">
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
-                <div class="feature col" data-aos="fade-up" data-aos-offset="500" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col" data-aos="fade-up" data-aos-offset="500" data-aos-delay="50" data-aos-duration="2000">
                     <img src="../img/2close_tab.svg" alt="" class="gmr-col gbr">
                     <p class="p2">Promoting your territory towards foreign tourists</p>
                     <p class="p1">EasyCamper wants to promote the excellence of Italian food and wine, art, culture and
@@ -87,8 +80,7 @@
                         structure</a>
                 </div>
 
-                <div class="feature col" data-aos="fade-down" data-aos-offset="500" data-aos-delay="250"
-                    data-aos-duration="2000">
+                <div class="feature col" data-aos="fade-down" data-aos-offset="500" data-aos-delay="250" data-aos-duration="2000">
                     <img src="../img/4tourist.svg" alt="" class="gmr-col1 gbr">
                     <p class="p2">Additional services designed for the needs of campers</p>
                     <p class="p1">Travelling often means that you dont have time to organise excursions along your
@@ -101,8 +93,7 @@
                     </a>
                 </div>
 
-                <div class="feature col" data-aos="fade-up" data-aos-offset="500" data-aos-delay="150"
-                    data-aos-duration="2000">
+                <div class="feature col" data-aos="fade-up" data-aos-offset="500" data-aos-delay="150" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../img/3destination.svg" alt="" class="gmr-col2 gbr">
                     </div>
@@ -126,8 +117,7 @@
             <h2 class=h2-1>Making your facility known is our priority</h2>
             <div class="row g-4 row-cols-2 row-cols-md-2  row-cols-lg-4">
 
-                <div class="feature col on" data-aos="zoom-in-down" data-aos-offset="300" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col on" data-aos="zoom-in-down" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../icon/format-list-checks 1.svg" alt="">
                     </div>
@@ -138,8 +128,7 @@
                     <a href="#" class="lin hov">Show me more</a>
                 </div>
 
-                <div class="feature col on" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col on" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../icon/spellcheck.svg" alt="">
                     </div>
@@ -148,8 +137,7 @@
                     <a href="#" class="lin hov">Show me more</a>
                 </div>
 
-                <div class="feature col on" data-aos="zoom-in-down" data-aos-offset="300" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col on" data-aos="zoom-in-down" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../icon/WCR_Text-Frame-Add.svg" alt="">
                     </div>
@@ -159,8 +147,7 @@
                     <a href="#" class="lin hov">Show me more</a>
                 </div>
 
-                <div class="feature col on" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col on" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../icon/WCR_Calendar-Today.svg" alt="">
                     </div>
@@ -183,14 +170,12 @@
                     <p class="is5">Discover all the equibbed areas in Italy. Find the shop with all the services for you
                         and
                         your camper.</p>
-                    <a href="#" type="button" class="btn btn-dark btn-lg btn-wrn"><img src="../icon/Icon_p.svg"
-                            class="btn-icon" alt=""> Start</a>
+                    <a href="#" type="button" class="btn btn-dark btn-lg btn-wrn"><img src="../icon/Icon_p.svg" class="btn-icon" alt=""> Start</a>
                 </div>
 
                 <div class="feature col ">
                     <div class="feature-icon">
-                        <img src="../img/orang1.jpg" alt="" class="an1 na" class="feature col on" data-aos="flip-up"
-                            data-aos-offset="460" data-aos-delay="50" data-aos-duration="2000">
+                        <img src="../img/orang1.jpg" alt="" class="an1 na" class="feature col on" data-aos="flip-up" data-aos-offset="460" data-aos-delay="50" data-aos-duration="2000">
                     </div>
                     <p class="ges1 egs">Lucciano</p>
                     <p class="ges1-1 seg">Rome</p>
@@ -199,8 +184,7 @@
 
                 <div class="feature col ">
                     <div class="feature-icon">
-                        <img src="../img/orang2.jpg" alt="" class="an2 na" data-aos="flip-up" data-aos-offset="460"
-                            data-aos-delay="50" data-aos-duration="2000">
+                        <img src="../img/orang2.jpg" alt="" class="an2 na" data-aos="flip-up" data-aos-offset="460" data-aos-delay="50" data-aos-duration="2000">
                     </div>
                     <p class="ges2 egs">Cremonesi</p>
                     <p class="ges2-2 seg">Florence</p>
@@ -209,8 +193,7 @@
 
                 <div class="feature col ">
                     <div class="feature-icon">
-                        <img src="../img/orang3.jpg" alt="" class="an3 na" data-aos="flip-up" data-aos-offset="460"
-                            data-aos-delay="50" data-aos-duration="2000">
+                        <img src="../img/orang3.jpg" alt="" class="an3 na" data-aos="flip-up" data-aos-offset="460" data-aos-delay="50" data-aos-duration="2000">
                     </div>
                     <p class="ges3 egs">Beneventi</p>
                     <p class="ges3-3 seg">Venice</p>
@@ -226,8 +209,7 @@
             <h2 class="h2-1 hh">Our Advantages</h2>
             <div class="row g-4 row-cols-1 row-cols-lg-3">
 
-                <div class="feature col on" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col on" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../icon/WCR_Compare2-HighlightDiff-cont.svg" alt="">
                     </div>
@@ -238,8 +220,7 @@
                     </p>
                 </div>
 
-                <div class="feature col on" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col on" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../icon/library_books.svg" alt="">
                     </div>
@@ -249,8 +230,7 @@
                         a fixed commission on each transaction of 5</p>
                 </div>
 
-                <div class="feature col on" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50"
-                    data-aos-duration="2000">
+                <div class="feature col on" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="50" data-aos-duration="2000">
                     <div class="feature-icon">
                         <img src="../icon/WCR_Compare-HSV.svg" alt="">
                     </div>
@@ -277,23 +257,19 @@
                 <form>
                     <div class="mb-3">
                         <label for="username" class="form-label">Name</label>
-                        <input type="text" class="form-control" placeholder="Your Full Name" aria-label="Username"
-                            aria-describedby="username" id="username">
+                        <input type="text" class="form-control" placeholder="Your Full Name" aria-label="Username" aria-describedby="username" id="username">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="What should we reply you back"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" placeholder="What should we reply you back" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" placeholder="The Reason" aria-label="subject"
-                            aria-describedby="subject" id="subject">
+                        <input type="text" class="form-control" placeholder="The Reason" aria-label="subject" aria-describedby="subject" id="subject">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" placeholder="Explain your issue please"
-                            id="exampleFormControlTextarea1" rows="6"></textarea>
+                        <textarea class="form-control" placeholder="Explain your issue please" id="exampleFormControlTextarea1" rows="6"></textarea>
                     </div>
                     <button class="w-100 btn btn-dark btn-lg cont" type="submit">Submit Form</button>
                 </form>

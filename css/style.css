@@ -1,20 +1,24 @@
 /* =====desktop===== */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+
     /* desktop bagian 1 */
-    .navbar{
+    .navbar {
         margin-top: 20px;
     }
-    .xc{
+
+    .xc {
         font-family: Montserrat, sans-serif;
-        color:#3F3D56;
+        color: #3F3D56;
         font-weight: 700;
     }
-    .masuk{
-        background-color: #F78065; 
+
+    .masuk {
+        background-color: #F78065;
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         color: white;
     }
+
     /* /desktop bagian 1 */
 
     /* ========= */
@@ -27,12 +31,13 @@
         margin-top: -90px;
         background-position: 0px 640px;
     }
+
     /* /desktop bagian 2 */
 
     /* ========= */
 
     /* desktop bagian 3 */
-    .btn-warna{
+    .btn-warna {
         background-color: #F78065;
         margin: 29px 429px 75px 20px;
         width: 220px;
@@ -42,156 +47,186 @@
         font-weight: bold;
         padding: 20px;
     }
-    .btn-icon{
+
+    .btn-icon {
         height: 24px;
         width: 24px;
         margin-top: -4px;
     }
-    .kartu{
-        margin: -280px 500px 0px -43px ;
+
+    .kartu {
+        margin: -280px 500px 0px -43px;
         width: 680px;
         height: 537px;
     }
-    .kartu-titel{
+
+    .kartu-titel {
         font-size: 39px;
         font-family: Merriweather, serif;
-        margin: 60px 156px 25px 20px ;
+        margin: 60px 156px 25px 20px;
         width: 500px;
         height: 151px;
     }
-    .kartu-teks{
+
+    .kartu-teks {
         font-size: 20px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         opacity: 0.6;
-        margin: 0px 162px 29px 20px ;
+        margin: 0px 162px 29px 20px;
         width: 450px;
         height: 96px;
     }
-    .spn{
+
+    .spn {
         color: #f78065;
     }
+
     /* /desktop bagian 3 */
 
     /* ========= */
 
     /* desktop bagian 4 */
-    .p2{
+    .p2 {
         font-size: 21px;
         font-weight: 700;
         font-family: Merriweather, serif;
     }
-    .p1{
+
+    .p1 {
         font-size: 15px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         opacity: 0.5;
     }
-    .p0{
-        color:#f78065 ;
+
+    .p0 {
+        color: #f78065;
         font-size: 16px;
         text-decoration: none;
         font-family: Montserrat, sans-serif;
         font-weight: 700;
     }
-    .hov:hover{
+
+    .hov:hover {
         color: black;
     }
-    .ner{
+
+    .ner {
         margin-top: 120px;
     }
-    .gmr-col{
+
+    .gmr-col {
         margin-bottom: 70px;
         margin-left: -5px;
     }
-    .gmr-col1{
+
+    .gmr-col1 {
         margin-bottom: 70px;
         margin-left: -10px;
     }
-    .gmr-col2{
+
+    .gmr-col2 {
         margin-bottom: 70px;
     }
-    .gbr{
-        width:247.5px;
-        height:180px;
+
+    .gbr {
+        width: 247.5px;
+        height: 180px;
     }
+
     /* /desktop bagian 4 */
 
     /* ========= */
 
     /* desktop bagian 5 */
-    .h2-1{
+    .h2-1 {
         font-family: Merriweather, serif;
     }
-    .nera{
+
+    .nera {
         margin-top: 120px;
     }
-    .on{
+
+    .on {
         margin-top: 100px;
     }
-    .is1{
+
+    .is1 {
         margin-top: 50px;
         font-family: Merriweather, serif;
         font-size: 20px;
     }
-    .is2{
+
+    .is2 {
         font-size: 13px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         opacity: 0.5;
     }
-    .is3{
+
+    .is3 {
         margin-bottom: 36px;
     }
-    .lin{
-        color:#f78065;
+
+    .lin {
+        color: #f78065;
         text-decoration: none;
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         font-size: 16px;
     }
-    .hov:hover{
-    color: black;
+
+    .hov:hover {
+        color: black;
     }
+
     /* /desktop bagian 5 */
 
     /* ========= */
 
     /* desktop bagian 6 */
-    .neb{
+    .neb {
         margin-top: 150px;
     }
-    .an1{
+
+    .an1 {
         height: 320px;
         width: 200px;
         margin-left: 138px;
     }
-    .an2{
+
+    .an2 {
         height: 320px;
         width: 200px;
         margin-left: 100px;
     }
-    .an3{
+
+    .an3 {
         height: 320px;
         width: 200px;
         margin-left: 60px;
     }
-    .be{
+
+    .be {
         width: 260px;
     }
-    .h2-2{
+
+    .h2-2 {
         font-family: Merriweather, serif;
         font-size: 28px;
         margin-bottom: 20px;
     }
-    .is5{
+
+    .is5 {
         font-size: 14px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         opacity: 0.5;
         margin-bottom: 40px;
     }
-    .btn-wrn{
+
+    .btn-wrn {
         background-color: #F78065;
         width: 174px;
         height: 50px;
@@ -201,15 +236,17 @@
         padding-right: 25px;
         padding-top: 13px;
     }
-    .lol1{
+
+    .lol1 {
         color: #f78065;
         margin-left: 138px;
         text-decoration: none;
         font-size: 16px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
-    } 
-    .lol2{
+    }
+
+    .lol2 {
         color: #f78065;
         margin-left: 100px;
         text-decoration: none;
@@ -217,7 +254,8 @@
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .lol3{
+
+    .lol3 {
         color: #f78065;
         margin-left: 60px;
         text-decoration: none;
@@ -225,128 +263,151 @@
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .ges1-1{
+
+    .ges1-1 {
         margin-left: 138px;
         font-size: 14px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         color: #3F3D56;
     }
-    .ges2-2{
+
+    .ges2-2 {
         margin-left: 100px;
         font-size: 14px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         color: #3F3D56;
     }
-    .ges3-3{
+
+    .ges3-3 {
         margin-left: 60px;
         font-size: 14px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         color: #3F3D56;
     }
-    .ges1{
+
+    .ges1 {
         font-size: 24px;
         margin-top: 19px;
         margin-left: 138px;
         font-family: Merriweather, serif;
     }
-    .ges2{
+
+    .ges2 {
         font-size: 20px;
         margin-top: 24px;
         margin-left: 100px;
         font-family: Merriweather, serif;
     }
-    .ges3{
+
+    .ges3 {
         font-size: 20px;
         margin-top: 24px;
         margin-left: 60px;
         font-family: Merriweather, serif;
-    } 
+    }
+
     /* /desktop bagian 6 */
 
     /* ========= */
 
-    /* desktop bagian7 */
-    .net{
+    /* desktop bagian 7 */
+    .net {
         margin-top: 80px;
     }
-    .is6{
+
+    .is6 {
         font-size: 13px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         opacity: 0.5;
         margin-top: 48px;
     }
+
     /* /desktop bagian 7 */
 
     /* ========= */
 
     /* desktop bagian 8 */
-    .nes{
+    .nes {
         margin-top: 130px;
         margin-bottom: 250px;
     }
-    .ting{
+
+    .ting {
         margin-top: 40px;
     }
-    .form-label{
+
+    .form-label {
         font-family: Merriweather, serif;
         font-size: 18px;
     }
-    .form-control{
+
+    .form-control {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .cont{
+
+    .cont {
         font-family: Montserrat, sans-serif;
         font-weight: 700;
     }
+
     /* /desktop bagian 8 */
 
     /* ========= */
 
     /* desktop bagian 9 */
-    .foot{
+    .foot {
         background-color: #F7F7F7;
         margin-top: 150px;
     }
-    .h1-when{
+
+    .h1-when {
         font-size: 40px;
         font-family: Merriweather, serif;
     }
-    .p-easy{
+
+    .p-easy {
         font-size: 20px;
         font-family: Merriweather, serif;
     }
-    .h5-jud{
+
+    .h5-jud {
         font-size: 18px;
         font-family: Merriweather, serif;
         margin-bottom: 20px;
     }
-    .ul-a{
+
+    .ul-a {
         font-size: 13px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .ul-b{
+
+    .ul-b {
         display: flex;
         font-size: 13px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         margin-left: 190px;
     }
-    .loc{
+
+    .loc {
         margin-left: 200px;
     }
-    .p-0{
+
+    .p-0 {
         margin-bottom: 20px;
         margin-right: 12px;
     }
-    .coc{
+
+    .coc {
         margin-left: 10px;
     }
+
     /* /desktop bagian 9 */
 
     /* ========= */
@@ -360,120 +421,153 @@
         background-image: url(../img/cesar-couto-Kg2M24Pr9aU-unsplash.jpg);
         background-size: cover;
     }
+
     .form-signin {
         width: 300px;
         padding: 15px;
         margin: auto;
         background-color: white;
         border-radius: 10px;
-        margin-top: 40px; 
+        margin-top: 40px;
     }
-    .gm{
+
+    .gm {
         height: 60px;
         width: 60px;
         margin-top: 10px;
     }
-    .deh{
+
+    .deh {
         margin-top: -10px;
         font-family: Merriweather, serif;
     }
-    .form-floating{
+
+    .form-floating {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .sas{
+
+    .sas {
         font-family: Montserrat, sans-serif;
         font-weight: bold;
         margin-top: 10px;
     }
-    .sas1{
+
+    .sas1 {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
+
     .form-signin .form-floating:focus-within {
         z-index: 2;
     }
+
     .form-signin input[type="text"] {
         margin-bottom: -1px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
+
     .form-signin input[type="password"] {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
-    .checkbox{
+
+    .checkbox {
         margin-left: -135px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         font-size: 15px;
     }
-    .btn-lg{
+
+    .btn-lg {
         background-color: #F78065;
         color: white;
     }
-    .btn-lg:hover{
-        background-color:black;
+
+    .btn-lg:hover {
+        background-color: black;
         color: white;
     }
-    .mt-5{
+
+    .mt-5 {
         font-size: 12px;
     }
-    .mt-5 a{
+
+    .mt-5 a {
         text-decoration: none;
         color: #F78065;
         font-weight: bold;
     }
-    .mt-5 a:hover{
+
+    .mt-5 a:hover {
         color: black;
     }
+
     /* /desktop bagian sign in page */
 
-     /* ========= */
+    /* ========= */
 
     /* desktop bagian sign up page */
-    .boy{
+    .boy {
         background-image: url(../img/cesar-couto-Kg2M24Pr9aU-unsplash.jpg);
         background-size: cover;
     }
-    .gan{
+
+    .gan {
         height: 300px;
         width: 300px;
         margin-top: 50px;
     }
-    .cou{
+
+    .cou {
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         font-size: 33px;
         margin-top: -40px;
     }
-    .cen{
+
+    .cen {
         margin-left: 90px;
     }
-    .ger{
+
+    .ger {
         margin-left: 60px;
         margin-top: 45px;
     }
-    .das{
+
+    .das {
         font-size: 12px;
     }
-    .das a{
+
+    .das a {
         text-decoration: none;
         color: #F78065;
         font-weight: bold;
     }
-    .das a:hover{
+
+    .das a:hover {
         color: black;
     }
-    .ccv{
+
+    .ccv {
         margin-top: -1px;
     }
-    .zy{
+
+    .zy {
         display: none;
     }
+
     /* /desktop bagian sign up page */
+
+    /* ========= */
+
+    /* desktop bagian dashboard */
+
+    /* /desktop bagian dashboard */
 }
+
 /* =====/desktop===== */
 
 
@@ -481,25 +575,29 @@
 
 /* =====mobile===== */
 @media (max-width: 575.98px) {
+
     /* mobile bagian 1 */
-    .logo{
+    .logo {
         background-color: #F78065;
         border-radius: 20px;
         padding: 4px;
     }
-    .xc{
+
+    .xc {
         font-family: Montserrat, sans-serif;
-        color:#3F3D56;
+        color: #3F3D56;
         font-weight: 700;
     }
-    .masuk{
-        background-color: #F78065; 
+
+    .masuk {
+        background-color: #F78065;
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         color: white;
     }
+
     /* /mobile bagian 1 */
-    
+
     /* ========= */
 
     /* mobile bagian 2 */
@@ -509,27 +607,32 @@
         height: 640px;
         background-position: 0px 640px;
     }
+
     /* /mobile bagian 2 */
 
     /* ========= */
 
     /* mobile bagian 3 */
-    .kartu{
+    .kartu {
         margin-top: -520px;
     }
-    .kartu-titel{
+
+    .kartu-titel {
         font-family: Merriweather, serif;
         font-size: 27px;
     }
-    .kartu-teks{
+
+    .kartu-teks {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         opacity: 0.6;
     }
-    .spn{
+
+    .spn {
         color: #f78065;
     }
-    .btn-warna{
+
+    .btn-warna {
         background-color: #F78065;
         width: 174px;
         height: 50px;
@@ -539,100 +642,118 @@
         padding-right: 25px;
         padding-top: 13px;
     }
+
     /* /mobile bagian 3 */
 
     /* ========= */
 
     /* mobile bagian 4 */
-    .ner{
+    .ner {
         margin-top: 130px;
     }
-    .gbr{
+
+    .gbr {
         margin-top: 40px;
-        width:200px;
-        height:200px;
+        width: 200px;
+        height: 200px;
     }
-    .p2{
+
+    .p2 {
         font-size: 21px;
         font-weight: 700;
         font-family: Merriweather, serif;
     }
-    .p1{
+
+    .p1 {
         font-size: 14px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         opacity: 0.5;
     }
-    .p0{
-        color:#f78065 ;
+
+    .p0 {
+        color: #f78065;
         font-size: 14px;
         text-decoration: none;
         font-family: Montserrat, sans-serif;
         font-weight: 700;
     }
-    .hov:hover{
+
+    .hov:hover {
         color: black;
     }
+
     /* /mobile bagian 4 */
 
     /* ========= */
 
     /* mobile bagian 5 */
-    .h2-1{
+    .h2-1 {
         font-family: Merriweather, serif;
         font-size: 21px;
     }
-    .nera{
+
+    .nera {
         margin-top: 100px;
     }
-    .on{
+
+    .on {
         margin-top: 70px;
     }
-    .is1{
+
+    .is1 {
         margin-top: 40px;
         font-family: Merriweather, serif;
         font-size: 17px;
     }
-    .is2{
+
+    .is2 {
         font-size: 12px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         opacity: 0.5;
     }
-    .lin{
-        color:#f78065;
+
+    .lin {
+        color: #f78065;
         text-decoration: none;
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         font-size: 14px;
     }
-    .hov:hover{
-    color: black;
+
+    .hov:hover {
+        color: black;
     }
+
     /* /mobile bagian 5 */
 
     /* ========= */
 
     /* mobile bagian 6 */
-    .neb{
+    .neb {
         margin-top: 100px;
     }
-    .be{
+
+    .be {
         width: 300px;
         margin-bottom: 50px;
     }
-    .h2-2{
+
+    .h2-2 {
         font-family: Merriweather, serif;
         font-size: 27px;
     }
-    .is5{
+
+    .is5 {
         font-size: 14px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         opacity: 0.5;
         margin-bottom: 20px;
     }
-    .btn-wrn{
+
+    .btn-wrn {
         background-color: #F78065;
         width: 174px;
         height: 50px;
@@ -642,118 +763,139 @@
         padding-right: 25px;
         padding-top: 13px;
     }
-    .na{
+
+    .na {
         margin-top: 40px;
         height: 320px;
         width: 200px;
     }
-    .egs{
+
+    .egs {
         font-size: 24px;
         margin-top: 19px;
         font-family: Merriweather, serif;
     }
-    .seg{
+
+    .seg {
         font-size: 14px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         color: #3F3D56;
     }
-    .olo{
+
+    .olo {
         color: #f78065;
         text-decoration: none;
         font-size: 16px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
+
     /* /mobile bagain 6 */
 
     /* ========= */
 
     /* mobile bagian 7 */
-    .net{
+    .net {
         margin-top: 80px;
     }
-    .hh{
-    font-size: 27px;
-    font-family: Merriweather, serif;
-    margin-bottom: 70px;
+
+    .hh {
+        font-size: 27px;
+        font-family: Merriweather, serif;
+        margin-bottom: 70px;
     }
-    .si{
+
+    .si {
         font-size: 13px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         opacity: 0.5;
     }
+
     /* /mobile baagian 7 */
 
     /* ========= */
 
     /* mobile baagian 8 */
-    .nes{
+    .nes {
         margin-top: 130px;
         margin-bottom: 250px;
     }
-    .ting{
+
+    .ting {
         margin-top: -30px;
     }
-    .form-label{
+
+    .form-label {
         font-family: Merriweather, serif;
         font-size: 18px;
     }
-    .form-control{
+
+    .form-control {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .cont{
+
+    .cont {
         font-family: Montserrat, sans-serif;
         font-weight: 700;
     }
-    
+
     /* /mobile baagian 8 */
 
     /* ========= */
 
     /* mobile baagian 9 */
-    .foot{
+    .foot {
         background-color: #F7F7F7;
         margin-top: 150px;
     }
-    .h1-when{
+
+    .h1-when {
         font-size: 35px;
         font-family: Merriweather, serif;
     }
-    .p-easy{
-        font-size:20px;
+
+    .p-easy {
+        font-size: 20px;
         font-family: Merriweather, serif;
     }
-    .h5-jud{
+
+    .h5-jud {
         font-size: 12px;
         font-family: Merriweather, serif;
         margin-bottom: 10px;
     }
-    .ul-a{
+
+    .ul-a {
         font-size: 12px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .ul-b{
+
+    .ul-b {
         font-size: 10px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         margin-top: -30px;
     }
-    .ul-c{
+
+    .ul-c {
         font-size: 12px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .border-top{
+
+    .border-top {
         margin-top: 40px;
     }
-    .p-0{
+
+    .p-0 {
         margin-bottom: 5px;
     }
-     /* /mobile baagian 9 */
+
+    /* /mobile baagian 9 */
 
     /* ========= */
 
@@ -762,109 +904,132 @@
         align-items: center;
         background-image: url(../img/cesar-couto-Kg2M24Pr9aU-unsplash.jpg);
     }
+
     .form-signin {
         width: 300px;
         padding: 15px;
         margin: auto;
         background-color: white;
         border-radius: 10px;
-        margin-top: 100px; 
+        margin-top: 100px;
     }
-    .gm{
+
+    .gm {
         height: 60px;
         width: 60px;
         margin-top: 10px;
     }
-    .deh{
+
+    .deh {
         margin-top: -10px;
         font-family: Merriweather, serif;
     }
-    .form-floating{
+
+    .form-floating {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
-    .sas{
+
+    .sas {
         font-family: Montserrat, sans-serif;
         font-weight: bold;
         margin-top: 10px;
     }
-    .sas1{
+
+    .sas1 {
         font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
+
     .form-signin .form-floating:focus-within {
         z-index: 2;
     }
+
     .form-signin input[type="text"] {
         margin-bottom: -1px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
+
     .form-signin input[type="password"] {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
-    .checkbox{
+
+    .checkbox {
         margin-left: -135px;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         font-size: 15px;
     }
-    .btn-lg{
+
+    .btn-lg {
         background-color: #F78065;
         color: white;
     }
-    .btn-lg:hover{
-        background-color:black;
+
+    .btn-lg:hover {
+        background-color: black;
         color: white;
     }
-    .mt-5{
+
+    .mt-5 {
         font-size: 12px;
     }
-    .mt-5 a{
+
+    .mt-5 a {
         text-decoration: none;
         color: #F78065;
         font-weight: bold;
     }
-    .mt-5 a:hover{
+
+    .mt-5 a:hover {
         color: black;
     }
+
     /* /mobile bagian sign in page */
 
-     /* ========= */
+    /* ========= */
 
     /* mobile bagian sign up page */
-    .boy{
+    .boy {
         background-image: url(../img/cesar-couto-Kg2M24Pr9aU-unsplash.jpg);
         align-items: center;
     }
-    .dar{
+
+    .dar {
         display: none;
     }
-    .das{
+
+    .das {
         font-size: 12px;
     }
-    .das a{
+
+    .das a {
         text-decoration: none;
         color: #F78065;
         font-weight: bold;
     }
-    .das a:hover{
+
+    .das a:hover {
         color: black;
     }
-    .ccv{
+
+    .ccv {
         margin-top: -1px;
     }
-    .cz{
+
+    .cz {
         width: 300px;
         padding: 15px;
         margin: auto;
         background-color: white;
         border-radius: 10px;
-        margin-top: 4px; 
+        margin-top: 4px;
     }
+
     /* /mobile bagian sign up page */
 }
-/* =====/mobile===== */
 
+/* =====/mobile===== */
