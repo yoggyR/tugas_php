@@ -1,18 +1,28 @@
 <?php
 session_start();
-$userDummy = [
-    'username' => 'test',
-    'password' => 'admin',
-    'isi'      => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est neque quod, alias labore corporis quibusdam dolorem cumque dolorum voluptatem, velit omnis tenetur! Officiis, distinctio aut! Itaque illo quaerat repellendus culpa! Dignissimos id, provident quasi inventore in enim. Reprehenderit esse impedit quasi laudantium quae possimus quidem obcaecati labore quam? Consequatur, perferendis? Odit, aspernatur dicta. Reprehenderit, quasi? Dignissimos sapiente iusto quis hic, quasi consequatur nisi! Nostrum ut maxime provident eaque minima dolores maiores incidunt nulla corporis? Sunt illum enim beatae perspiciatis cumque quidem iure, fuga dolorem iste! Pariatur amet eaque a iste obcaecati minima nam eligendi, autem odit atque eos minus odio tenetur impedit, ipsum corrupti dolores recusandae quo. Dolorem aut velit quis a possimus officiis eos ut distinctio error. Explicabo esse, omnis ullam sint sit, eaque accusamus necessitatibus veritatis qui iure quidem porro ex id distinctio quia saepe voluptatibus nulla illo repellat ea impedit perferendis cupiditate quos! Pariatur nesciunt eos magnam, esse voluptate odio beatae laboriosam ab voluptatum aperiam reiciendis vel voluptas debitis obcaecati? Ad aperiam similique impedit modi dolor nulla tempore repudiandae nostrum. Ipsam nihil soluta, veniam saepe veritatis a nam, quod suscipit modi cum molestiae? Ipsam earum animi delectus voluptatum velit, voluptatibus minus inventore expedita voluptas sit temporibus, cum tempora adipisci, quibusdam libero atque praesentium blanditiis? A, temporibus eum non esse aperiam molestiae maxime eligendi consequuntur beatae optio eaque placeat corrupti voluptates repellendus nulla doloribus facere. Nulla aspernatur tenetur deserunt consequatur nobis pariatur vitae quis possimus sequi ullam, doloribus quaerat ut, fuga voluptates? Sint dolorem atque hic adipisci odio, ab cupiditate molestiae aliquid, magnam nostrum temporibus, voluptatibus placeat pariatur! Reprehenderit sed quaerat sapiente sit est laborum aperiam deleniti aspernatur laudantium nulla nostrum debitis rem, maiores maxime dolorum eveniet exercitationem inventore quia veritatis totam labore, nisi repudiandae. Impedit labore nihil doloribus, itaque totam sunt alias porro nulla provident? Soluta, modi?'
-];
+include './config/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (!empty($_POST['name']) && !empty($_POST['password'])) {
-        $name = $_POST['name'];
+    if (!empty($_POST['email']) && !empty($_POST['password'])) {
+        $email = $_POST['email'];
         $password = $_POST['password'];
-        if ($name == $userDummy['username'] && $password == $userDummy['password']) {
-            $_SESSION["name"] = $name;
-            $_SESSION["isi"] = $userDummy['isi'];
+
+        // GET DATA USER DARI DATABASE
+        $sql = "select * from users u where email = '".$email."'";
+        $result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) > 0) {
+            $dataUser = mysqli_fetch_assoc($result); // data user ditemukan
+        } else {
+            $erorAuthUserNotFound = true;
+        }
+        mysqli_close($conn); // untuk close connection database
+        
+        if ($email == $dataUser['email'] && hash('sha256',$password) == $dataUser['password'] ) {
+            $_SESSION["id"] = $dataUser['id'];
+            $_SESSION["username"] = $dataUser['username'];
+            $_SESSION["nama"] = $dataUser['nama'];
+            $_SESSION["email"] = $dataUser['email'];
             header("Location: ./layouts/main.php?page=dashboard");
         } else {
             $erorAuth = true;
@@ -51,12 +61,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php if (isset($erorAuth)) : ?>
             <p style="color: red;">USERNAME DAN PASSWORD TIDAK COCOK !!!</p>
         <?php endif; ?>
+        <?php if (isset($erorAuthUserNotFound)) : ?>
+            <p style="color: red;">USERNAME TIDAK TERDAFTAR DI SISTEM !!!</p>
+        <?php endif; ?>
         <form class="orm" action=" " method="POST">
             <img class="mb-4 gm" src="../icon/svg.svg" alt="">
             <h1 class="h3 mb-3 fw-normal deh">Easy Camper</h1>
             <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="name">
-                <label for="floatingInput">Username </label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email">
+                <label for="floatingInput">Email </label>
             </div>
             <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
